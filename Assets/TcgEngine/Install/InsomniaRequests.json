@@ -1,0 +1,1566 @@
+_type: export
+__export_format: 4
+__export_date: 2023-05-06T00:03:49.464Z
+__export_source: insomnia.desktop.app:v2023.2.0
+resources:
+  - _id: req_5a46e6cf40dc42258f4063335142413e
+    parentId: fld_f1df70e6475d4c6f887f5d9ef3a19a97
+    modified: 1681943953161
+    created: 1681069243153
+    url: http://127.0.0.1/users/register
+    name: Register
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"username": "Player",
+        	"email": "player@tcgengine.com",
+        	"password": "test"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - id: pair_90761e85deda44a89b470bf1f95a257b
+        name: ""
+        value: ""
+        description: ""
+    authentication: {}
+    metaSortKey: -1620422790674
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_f1df70e6475d4c6f887f5d9ef3a19a97
+    parentId: wrk_1e327cdd1a8c42eeba656adbd9ec0c93
+    modified: 1683330916061
+    created: 1681069243149
+    name: Login
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: 0
+    _type: request_group
+  - _id: wrk_1e327cdd1a8c42eeba656adbd9ec0c93
+    parentId: null
+    modified: 1683261747002
+    created: 1683261747002
+    name: Tcg Engine
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_b3b1cff1069c4e0c90e06fc7ce6ffba0
+    parentId: fld_f1df70e6475d4c6f887f5d9ef3a19a97
+    modified: 1683331395656
+    created: 1681069243161
+    url: http://127.0.0.1/auth
+    name: Login
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"username": "Player",
+        	"password": "test"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_98cb774827fc45bdb4b8e2976b315bcb
+    authentication: {}
+    metaSortKey: -1618735857899
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_87e571b07418423c8f9868973f575c58
+    parentId: fld_f1df70e6475d4c6f887f5d9ef3a19a97
+    modified: 1681943948097
+    created: 1681069243172
+    url: http://127.0.0.1/auth
+    name: LoginAdmin
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"username": "admin",
+        	"password": "admin"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_98cb774827fc45bdb4b8e2976b315bcb
+    authentication: {}
+    metaSortKey: -1618314124705.25
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_a5bf26d0e7d7448e87633165e24a8299
+    parentId: fld_f1df70e6475d4c6f887f5d9ef3a19a97
+    modified: 1681943923997
+    created: 1681069243164
+    url: http://127.0.0.1/auth/refresh
+    name: LoginRefresh
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"refresh_token": ""
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_98cb774827fc45bdb4b8e2976b315bcb
+      - name: authorization
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDMzMTg5M2YxNjFkNDgxOGNjMDcyY2YiLCJ1c2VybmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkB0Y2dlbmdpbmUuY29tIiwicGVybWlzc2lvbl9sZXZlbCI6MTAsInZhbGlkYXRpb25fbGV2ZWwiOjAsInByb3ZpZGVyIjoidXNlcm5hbWUiLCJyZWZyZXNoX2tleSI6Im0zbHd4THVFNG9ya21uMWhHNjhyRmc9PSIsImlhdCI6MTY4MTA3MDM0NH0.T9HSX9sZKTqcRfOZLCHlrOA9k9Pak7Ck2WsV8b4VmqM
+        description: ""
+        id: pair_fcce40b71ed94c71b59aeebfd72ec39c
+      - id: pair_1d7a9b347e8e4ad4bd3d25f1fc970f0c
+        name: ""
+        value: ""
+        description: ""
+    authentication: {}
+    metaSortKey: -1617892391511.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_7f503ae740d6435daec773d947e5b33a
+    parentId: fld_f1df70e6475d4c6f887f5d9ef3a19a97
+    modified: 1681943944641
+    created: 1681069243167
+    url: http://127.0.0.1/auth/validate
+    name: Validate
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_98cb774827fc45bdb4b8e2976b315bcb
+      - name: authorization
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDM1ZDkwYzBjOWE4MTA5M2M5YjE0ZmMiLCJ1c2VybmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkB0Y2dlbmdpbmUuY29tIiwicGVybWlzc2lvbl9sZXZlbCI6MTAsInZhbGlkYXRpb25fbGV2ZWwiOjAsInByb3ZpZGVyIjoidXNlcm5hbWUiLCJyZWZyZXNoX2tleSI6IjI3UXpYWVlhZmVBcVA3MmZvZzAwNXc9PSIsImlhdCI6MTY4MTI1MzQzOH0.Bj1AQqgT_qUABXcoeXeFOeXIrbhW34J3AYKJafskbA8
+        description: ""
+        id: pair_625d3827748341ffa0a1d45db7f04d2b
+      - id: pair_5b7f3910db9e4e4fb96a515978e59c62
+        name: ""
+        value: ""
+        description: ""
+    authentication: {}
+    metaSortKey: -1617048925024
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_386854bf77ac4b34acc01d59341f11d0
+    parentId: fld_f1df70e6475d4c6f887f5d9ef3a19a97
+    modified: 1683057223716
+    created: 1681069243157
+    url: http://127.0.0.1/version
+    name: Version
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1617048924974
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_cda7c9dda355490cadc63d0c895c58a9
+    parentId: fld_0c5f13a6e1cd45238e8510448832e37c
+    modified: 1681069243200
+    created: 1681069243200
+    url: http://127.0.0.1/users
+    name: GetAll
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: authorization
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDA4MDgxM2MyODc2ODE3MWQ0YWQ4NDUiLCJ1c2VybmFtZSI6IlBsYXllciIsImVtYWlsIjoiUGxheWVyQHRlc3QuY29tIiwicGVybWlzc2lvbkxldmVsIjoxLCJ2YWxpZGF0aW9uTGV2ZWwiOjAsInByb3ZpZGVyIjoidXNlcm5hbWUiLCJyZWZyZXNoS2V5Ijoid3BKcWhzT2Z1OUlRcU5wOWtoVVNnZz09IiwiaWF0IjoxNjc4MjQ3OTU4fQ.jThH3hKRrTGu4xTW02nnt3LzDe8hJa2z90rHI-lqJes
+        description: ""
+        id: pair_01513c87de21470ca8b0f83c91170014
+    authentication: {}
+    metaSortKey: -1620425650641.75
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_0c5f13a6e1cd45238e8510448832e37c
+    parentId: wrk_1e327cdd1a8c42eeba656adbd9ec0c93
+    modified: 1683330916061
+    created: 1681069243177
+    name: Users
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: 100
+    _type: request_group
+  - _id: req_2aca3ff7640b4f24ab7f75c41bd2e435
+    parentId: fld_0c5f13a6e1cd45238e8510448832e37c
+    modified: 1683331392639
+    created: 1681069243179
+    url: http://127.0.0.1/users/Player
+    name: GetUser
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: authorization
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDM1ZTQ2NTBjOWE4MTA5M2M5YjE1YzEiLCJ1c2VybmFtZSI6IlBsYXllciIsImVtYWlsIjoicGxheWVyQHRjZ2VuZ2luZS5jb20iLCJwZXJtaXNzaW9uX2xldmVsIjoxLCJ2YWxpZGF0aW9uX2xldmVsIjowLCJwcm92aWRlciI6InVzZXJuYW1lIiwicmVmcmVzaF9rZXkiOiJhQmJiQ2NLbjFHTlZTYit6Zlg2S0J3PT0iLCJpYXQiOjE2ODMzMzA5ODh9.JeTGNIAfYL1boZygDUzacVCg96xX6ZREs7VqF9mKSYA
+        description: ""
+        id: pair_01513c87de21470ca8b0f83c91170014
+      - name: ""
+        value: ""
+        description: ""
+        id: pair_4745f1a6da3a4205b5a97cfdcf4783ec
+      - id: pair_bf934a7437ef4fcc9f84f89f087f2847
+        name: ""
+        value: ""
+        description: ""
+    authentication: {}
+    metaSortKey: -1620425650635.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_465f4649cba54c7fa89d393a9d35c326
+    parentId: fld_0c5f13a6e1cd45238e8510448832e37c
+    modified: 1681069243187
+    created: 1681069243187
+    url: http://127.0.0.1/online
+    name: Get Online
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: authorization
+        value: ""
+        description: ""
+        id: pair_01513c87de21470ca8b0f83c91170014
+      - name: ""
+        value: ""
+        description: ""
+        id: pair_4745f1a6da3a4205b5a97cfdcf4783ec
+    authentication: {}
+    metaSortKey: -1620425650626.9062
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_cfdbb6c220fc4b749b4fb2b60683f6f9
+    parentId: fld_0c5f13a6e1cd45238e8510448832e37c
+    modified: 1681069243184
+    created: 1681069243184
+    url: "http://127.0.0.1/users/edit/63cf123e98f08f4f18493e8c "
+    name: Edit User
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"avatar" :"test"
+        }
+    parameters: []
+    headers:
+      - name: authorization
+        value: ""
+        description: ""
+        id: pair_2162f722eab5440cae4c6a8f860004e6
+      - name: Content-Type
+        value: application/json
+        id: pair_6ca8a1bf082446c6a88efbafd4e1d4df
+    authentication: {}
+    metaSortKey: -1620423505648.75
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_40b9624437fa4a68aa4f21f0de9c3478
+    parentId: fld_0c5f13a6e1cd45238e8510448832e37c
+    modified: 1681069243190
+    created: 1681069243190
+    url: http://127.0.0.1/users/password/edit
+    name: Change Password
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"password_previous": "test",
+        	"password_new": "12345"
+        }
+    parameters: []
+    headers:
+      - name: authorization
+        value: ""
+        description: ""
+        id: pair_2162f722eab5440cae4c6a8f860004e6
+      - name: Content-Type
+        value: application/json
+        id: pair_6ca8a1bf082446c6a88efbafd4e1d4df
+    authentication: {}
+    metaSortKey: -1620422969417.6875
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_9326773ab9eb433191d7662a63aa497b
+    parentId: fld_0c5f13a6e1cd45238e8510448832e37c
+    modified: 1681069243193
+    created: 1681069243193
+    url: http://127.0.0.1/users/password/reset
+    name: Reset Password
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"email": "player@test.com"
+        }
+    parameters: []
+    headers:
+      - name: authorization
+        value: ""
+        description: ""
+        id: pair_2162f722eab5440cae4c6a8f860004e6
+      - name: Content-Type
+        value: application/json
+        id: pair_6ca8a1bf082446c6a88efbafd4e1d4df
+    authentication: {}
+    metaSortKey: -1620422880045.8438
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_7dd7dfbd4816468182c601af74491048
+    parentId: fld_0c5f13a6e1cd45238e8510448832e37c
+    modified: 1681069243196
+    created: 1681069243196
+    url: http://127.0.0.1/users/password/reset/confirm
+    name: Confirm Password
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"email": "player@test.com",
+        	"code": "GVTNYKEA",
+        	"password": "123456"
+        }
+    parameters: []
+    headers:
+      - name: authorization
+        value: ""
+        description: ""
+        id: pair_2162f722eab5440cae4c6a8f860004e6
+      - name: Content-Type
+        value: application/json
+        id: pair_6ca8a1bf082446c6a88efbafd4e1d4df
+    authentication: {}
+    metaSortKey: -1620422835359.9219
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_98f6184108694041a2daf18407402e6d
+    parentId: fld_0c5f13a6e1cd45238e8510448832e37c
+    modified: 1683147516685
+    created: 1681403714896
+    url: http://127.0.0.1/users/cards/buy
+    name: Buy Card
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"card" : "wolf_alpha",
+        	"quantity" : 1
+        }
+    parameters: []
+    headers:
+      - name: authorization
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDM1ZTQ2NTBjOWE4MTA5M2M5YjE1YzEiLCJ1c2VybmFtZSI6IlBsYXllciIsImVtYWlsIjoicGxheWVyQHRjZ2VuZ2luZS5jb20iLCJwZXJtaXNzaW9uX2xldmVsIjoxLCJ2YWxpZGF0aW9uX2xldmVsIjowLCJwcm92aWRlciI6InVzZXJuYW1lIiwicmVmcmVzaF9rZXkiOiJrc2o1WTJlNHppeVI0RXhyRkU1c2pRPT0iLCJpYXQiOjE2ODMxNDY4MTZ9.gs6D80lZ7P-MSL8Uzfo7qIaxQ8XdrQB3n4gWjmxksh0
+        description: ""
+        id: pair_2162f722eab5440cae4c6a8f860004e6
+      - name: Content-Type
+        value: application/json
+        id: pair_6ca8a1bf082446c6a88efbafd4e1d4df
+    authentication: {}
+    metaSortKey: -1620422835322.4219
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_10a81bca338d48a99c7978b7664c2189
+    parentId: fld_0c5f13a6e1cd45238e8510448832e37c
+    modified: 1683147519189
+    created: 1683146832115
+    url: http://127.0.0.1/users/cards/sell
+    name: Sell Card
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"card" : "wolf_alpha",
+        	"quantity" : 3
+        }
+    parameters: []
+    headers:
+      - name: authorization
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDM1ZTQ2NTBjOWE4MTA5M2M5YjE1YzEiLCJ1c2VybmFtZSI6IlBsYXllciIsImVtYWlsIjoicGxheWVyQHRjZ2VuZ2luZS5jb20iLCJwZXJtaXNzaW9uX2xldmVsIjoxLCJ2YWxpZGF0aW9uX2xldmVsIjowLCJwcm92aWRlciI6InVzZXJuYW1lIiwicmVmcmVzaF9rZXkiOiJrc2o1WTJlNHppeVI0RXhyRkU1c2pRPT0iLCJpYXQiOjE2ODMxNDY4MTZ9.gs6D80lZ7P-MSL8Uzfo7qIaxQ8XdrQB3n4gWjmxksh0
+        description: ""
+        id: pair_2162f722eab5440cae4c6a8f860004e6
+      - name: Content-Type
+        value: application/json
+        id: pair_6ca8a1bf082446c6a88efbafd4e1d4df
+    authentication: {}
+    metaSortKey: -1620422835319.2969
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_c235182093ba4d0c90f15e9824d25efb
+    parentId: fld_0c5f13a6e1cd45238e8510448832e37c
+    modified: 1681943961924
+    created: 1681403719199
+    url: http://127.0.0.1/users/packs/buy
+    name: Buy Pack
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"pack" : "standard",
+        	"quantity" : 1
+        }
+    parameters: []
+    headers:
+      - name: authorization
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDM1ZTQ2NTBjOWE4MTA5M2M5YjE1YzEiLCJ1c2VybmFtZSI6IlBsYXllciIsImVtYWlsIjoicGxheWVyQHRjZ2VuZ2luZS5jb20iLCJwZXJtaXNzaW9uX2xldmVsIjoxLCJ2YWxpZGF0aW9uX2xldmVsIjowLCJwcm92aWRlciI6InVzZXJuYW1lIiwicmVmcmVzaF9rZXkiOiJyR0g4emNBTXF2b0huWkp4ck1JcTZBPT0iLCJpYXQiOjE2ODE0NDM0OTZ9.PDTiVFZjgjJXlfL3LGm4GG-x28tzAthFXsY8iRD8EQI
+        description: ""
+        id: pair_2162f722eab5440cae4c6a8f860004e6
+      - name: Content-Type
+        value: application/json
+        id: pair_6ca8a1bf082446c6a88efbafd4e1d4df
+    authentication: {}
+    metaSortKey: -1620422835316.1719
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_bcecbf432fae4fc8960fba07be63d5f5
+    parentId: fld_0c5f13a6e1cd45238e8510448832e37c
+    modified: 1681943964739
+    created: 1681403709224
+    url: http://127.0.0.1/users/packs/open
+    name: Open Pack
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"pack" : "standard"
+        }
+    parameters: []
+    headers:
+      - name: authorization
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDM1ZTQ2NTBjOWE4MTA5M2M5YjE1YzEiLCJ1c2VybmFtZSI6IlBsYXllciIsImVtYWlsIjoicGxheWVyQHRjZ2VuZ2luZS5jb20iLCJwZXJtaXNzaW9uX2xldmVsIjoxLCJ2YWxpZGF0aW9uX2xldmVsIjowLCJwcm92aWRlciI6InVzZXJuYW1lIiwicmVmcmVzaF9rZXkiOiJyR0g4emNBTXF2b0huWkp4ck1JcTZBPT0iLCJpYXQiOjE2ODE0NDM0OTZ9.PDTiVFZjgjJXlfL3LGm4GG-x28tzAthFXsY8iRD8EQI
+        description: ""
+        id: pair_2162f722eab5440cae4c6a8f860004e6
+      - name: Content-Type
+        value: application/json
+        id: pair_6ca8a1bf082446c6a88efbafd4e1d4df
+    authentication: {}
+    metaSortKey: -1620422835313.0469
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_3f973d70f9e84df793766bcfcdf33a8b
+    parentId: fld_0c5f13a6e1cd45238e8510448832e37c
+    modified: 1681402878019
+    created: 1681069243203
+    url: "http://127.0.0.1/users/rewards/gain/63cf123e98f08f4f18493e8c "
+    name: Gain Reward (server)
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"coin" :10
+        }
+    parameters: []
+    headers:
+      - name: authorization
+        value: ""
+        description: ""
+        id: pair_2162f722eab5440cae4c6a8f860004e6
+      - name: Content-Type
+        value: application/json
+        id: pair_6ca8a1bf082446c6a88efbafd4e1d4df
+    authentication: {}
+    metaSortKey: -1620422835309.9219
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_d15c8cc1e5c14edfa7a612f44ab5810a
+    parentId: fld_0c5f13a6e1cd45238e8510448832e37c
+    modified: 1681402867136
+    created: 1681069287074
+    url: http://127.0.0.1/users/cards/add/60b59f83cd5eb61461b5a16b
+    name: AddUserCards (server)
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"cards":[
+        		{"tid": "drago", "quantity": 1}
+        	]
+        }
+    parameters: []
+    headers:
+      - name: authorization
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGMzZWU5NTAxMmYwYTVlNTFlYmJiZWQiLCJ1c2VybmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkBwbGF5ZW9hLmNvbSIsInBlcm1pc3Npb25MZXZlbCI6NywicHJvdmlkZXIiOiJ1c2VybmFtZSIsInJlZnJlc2hLZXkiOiJkbUxPZ1UxU3kyRGFpSHRZNjVBRmVnPT0iLCJpYXQiOjE2Mzc5NTczOTh9.S6sAWwh1quEf3YURSGi6Z3JLf1AuIFwBR0MVEAc1aoc
+        description: ""
+        id: pair_e2542800a3ca49baa2b366c2c21f8dc8
+      - name: Content-Type
+        value: application/json
+        id: pair_641f62d0547f473aa02e9aecc43af9d9
+    authentication: {}
+    metaSortKey: -1620422835259.9219
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_4fa1835d6c9c4b51b7bca9e210215ef6
+    parentId: fld_0c5f13a6e1cd45238e8510448832e37c
+    modified: 1681402874920
+    created: 1681069287101
+    url: http://127.0.0.1/users/packs/add/60eb2592fae494fb4df33aaa
+    name: AddUserPacks (server)
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"quantity": 5
+        }
+    parameters: []
+    headers:
+      - name: authorization
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGMzZWU5NTAxMmYwYTVlNTFlYmJiZWQiLCJ1c2VybmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkBwbGF5ZW9hLmNvbSIsInBlcm1pc3Npb25MZXZlbCI6NywicHJvdmlkZXIiOiJ1c2VybmFtZSIsInJlZnJlc2hLZXkiOiJxNTdvdWh5YTAzQUVwQWFaUEl4dHpRPT0iLCJpYXQiOjE2Mjk1MTU1OTV9.pKDNjmkzsAQrnpBO-ZJa9Ko1prF6urfeGcSIyHbvQvk
+        description: ""
+        id: pair_e2542800a3ca49baa2b366c2c21f8dc8
+      - name: Content-Type
+        value: application/json
+        id: pair_641f62d0547f473aa02e9aecc43af9d9
+    authentication: {}
+    metaSortKey: -1620422835209.9219
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_86ddac6a41494579a59b42ebc9a7c88d
+    parentId: fld_0c5f13a6e1cd45238e8510448832e37c
+    modified: 1681402882611
+    created: 1681069243206
+    url: "http://127.0.0.1/users/permission/edit/6407a114953baa70f61b6cad "
+    name: Edit Permission (admin)
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"permission_level" : 5
+        }
+    parameters: []
+    headers:
+      - name: authorization
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDA3OWVmNzk2MzBkY2VkODlhM2Y2MWMiLCJ1c2VybmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkB0ZXN0LmNvbSIsInBlcm1pc3Npb25MZXZlbCI6MTAsInZhbGlkYXRpb25MZXZlbCI6MCwicHJvdmlkZXIiOiJ1c2VybmFtZSIsInJlZnJlc2hLZXkiOiJ4WEp4ZTBYaEI5UlkxeWxUWDZpdmtRPT0iLCJpYXQiOjE2NzgyMjE3MDN9.0HFBpH4Ip6uFUX_1bpmc6R5_ZNmLpcTtu1kzplo1ADw
+        description: ""
+        id: pair_2162f722eab5440cae4c6a8f860004e6
+      - name: Content-Type
+        value: application/json
+        id: pair_6ca8a1bf082446c6a88efbafd4e1d4df
+    authentication: {}
+    metaSortKey: -1620422835159.9219
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_4abfadce83da4d1983566bbbaddfe434
+    parentId: fld_cb267670541b4160b51fb6ff8b2342ad
+    modified: 1681943974447
+    created: 1681069243224
+    url: http://127.0.0.1/users/friends/add
+    name: Friend Add
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"username" : "Marc"
+        }
+    parameters: []
+    headers:
+      - id: pair_39ea4caf687e45d78231332a7ec40c2b
+        name: authorization
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDMzMjgyOTFmMGIwODVjNWRiYmE3ODQiLCJ1c2VybmFtZSI6IlBsYXllciIsImVtYWlsIjoicGxheWVyQHRjZ2VuZ2luZS5jb20iLCJwZXJtaXNzaW9uX2xldmVsIjoxLCJ2YWxpZGF0aW9uX2xldmVsIjowLCJwcm92aWRlciI6InVzZXJuYW1lIiwicmVmcmVzaF9rZXkiOiJOT3JpdllBSHRYUG4wQkRNMEM5WW9nPT0iLCJpYXQiOjE2ODEwNzQyMzR9.m7U8fbud20r0odbhxDNKX5PwLCg7ykQy6cOzBS6tVIY
+        description: ""
+      - name: Content-Type
+        value: application/json
+        id: pair_ca2c808bc61a42d987a596b9c3e03492
+    authentication: {}
+    metaSortKey: -1666023384474
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_cb267670541b4160b51fb6ff8b2342ad
+    parentId: wrk_1e327cdd1a8c42eeba656adbd9ec0c93
+    modified: 1683330916061
+    created: 1681069243220
+    name: User Friends
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: 200
+    _type: request_group
+  - _id: req_8ced67eb7a0743cebb22b3f06682c3a0
+    parentId: fld_cb267670541b4160b51fb6ff8b2342ad
+    modified: 1681943983700
+    created: 1681069243228
+    url: http://127.0.0.1/users/friends/remove
+    name: Friend Remove
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"username" : "Marc"
+        }
+    parameters: []
+    headers:
+      - id: pair_39ccfb37bdcc40c484d38c793fba8394
+        name: authorization
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDMzMjgyOTFmMGIwODVjNWRiYmE3ODQiLCJ1c2VybmFtZSI6IlBsYXllciIsImVtYWlsIjoicGxheWVyQHRjZ2VuZ2luZS5jb20iLCJwZXJtaXNzaW9uX2xldmVsIjoxLCJ2YWxpZGF0aW9uX2xldmVsIjowLCJwcm92aWRlciI6InVzZXJuYW1lIiwicmVmcmVzaF9rZXkiOiJOT3JpdllBSHRYUG4wQkRNMEM5WW9nPT0iLCJpYXQiOjE2ODEwNzQyMzR9.m7U8fbud20r0odbhxDNKX5PwLCg7ykQy6cOzBS6tVIY
+        description: ""
+      - name: Content-Type
+        value: application/json
+        id: pair_fd0255a1c80149a581e0a9bee675fe10
+    authentication: {}
+    metaSortKey: -1648865164314
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_d07ebf52a0c541e98d24e6905fe18586
+    parentId: fld_cb267670541b4160b51fb6ff8b2342ad
+    modified: 1681943989306
+    created: 1681069243221
+    url: http://127.0.0.1/users/friends/list
+    name: Friend List
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - id: pair_f6ce7d423ea844c0a8a98d5f2ae6f1ed
+        name: authorization
+        value: ""
+        description: ""
+    authentication: {}
+    metaSortKey: -1648865164264
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_5f8ffd53c40e453a9a34bf3d0362f2de
+    parentId: fld_0b5710c4a1be492db496b7b19ba740d7
+    modified: 1681402965910
+    created: 1681069287110
+    url: http://127.0.0.1/cards/add/
+    name: Add Card (admin)
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"tid": "bird",
+        	"type": "character",
+        	"team": "forest",
+        	"rarity": 1,
+        	"cost": 1,
+        	"attack": 1,
+        	"hp": 1,
+        	"packs": ["standard"]
+        	
+        	
+        }
+    parameters: []
+    headers:
+      - name: authorization
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDMzMTg5M2YxNjFkNDgxOGNjMDcyY2YiLCJ1c2VybmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkB0Y2dlbmdpbmUuY29tIiwicGVybWlzc2lvbl9sZXZlbCI6MTAsInZhbGlkYXRpb25fbGV2ZWwiOjAsInByb3ZpZGVyIjoidXNlcm5hbWUiLCJyZWZyZXNoX2tleSI6InE4SklHMy9vZ1M4c0huK3F2R2hqMnc9PSIsImlhdCI6MTY4MTA3NDUwMX0.Zp06uTfraH603KUw5tIucefR68xHNL_GQAI3GYlgXGI
+        description: ""
+        id: pair_e2542800a3ca49baa2b366c2c21f8dc8
+      - name: Content-Type
+        value: application/json
+        id: pair_641f62d0547f473aa02e9aecc43af9d9
+    authentication: {}
+    metaSortKey: -1620425724972
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_0b5710c4a1be492db496b7b19ba740d7
+    parentId: wrk_1e327cdd1a8c42eeba656adbd9ec0c93
+    modified: 1683330916061
+    created: 1681069287059
+    name: Cards
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: 300
+    _type: request_group
+  - _id: req_7d803ce6af2a42c0862c47d2ced4b53c
+    parentId: fld_0b5710c4a1be492db496b7b19ba740d7
+    modified: 1681402968616
+    created: 1681069481996
+    url: http://127.0.0.1/cards/bird/
+    name: Delete Card (admin)
+    description: ""
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: authorization
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDMzMTg5M2YxNjFkNDgxOGNjMDcyY2YiLCJ1c2VybmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkB0Y2dlbmdpbmUuY29tIiwicGVybWlzc2lvbl9sZXZlbCI6MTAsInZhbGlkYXRpb25fbGV2ZWwiOjAsInByb3ZpZGVyIjoidXNlcm5hbWUiLCJyZWZyZXNoX2tleSI6InE4SklHMy9vZ1M4c0huK3F2R2hqMnc9PSIsImlhdCI6MTY4MTA3NDUwMX0.Zp06uTfraH603KUw5tIucefR68xHNL_GQAI3GYlgXGI
+        description: ""
+        id: pair_e2542800a3ca49baa2b366c2c21f8dc8
+      - name: Content-Type
+        value: application/json
+        id: pair_641f62d0547f473aa02e9aecc43af9d9
+    authentication: {}
+    metaSortKey: -1620425724959.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_bf6f5ae8b071468caebdee173be6fed9
+    parentId: fld_0b5710c4a1be492db496b7b19ba740d7
+    modified: 1681075447882
+    created: 1681069287113
+    url: http://127.0.0.1/cards/
+    name: Get Cards
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: authorization
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDMzMTg5M2YxNjFkNDgxOGNjMDcyY2YiLCJ1c2VybmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkB0Y2dlbmdpbmUuY29tIiwicGVybWlzc2lvbl9sZXZlbCI6MTAsInZhbGlkYXRpb25fbGV2ZWwiOjAsInByb3ZpZGVyIjoidXNlcm5hbWUiLCJyZWZyZXNoX2tleSI6InE4SklHMy9vZ1M4c0huK3F2R2hqMnc9PSIsImlhdCI6MTY4MTA3NDUwMX0.Zp06uTfraH603KUw5tIucefR68xHNL_GQAI3GYlgXGI
+        description: ""
+        id: pair_e2542800a3ca49baa2b366c2c21f8dc8
+      - name: Content-Type
+        value: application/json
+        id: pair_641f62d0547f473aa02e9aecc43af9d9
+    authentication: {}
+    metaSortKey: -1620425724947
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_a63cd75288604c8eaaf9514ef9ca42cb
+    parentId: fld_0b5710c4a1be492db496b7b19ba740d7
+    modified: 1681403470796
+    created: 1681069572740
+    url: http://127.0.0.1/packs/add/
+    name: Add Pack (admin)
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"tid": "standard",
+        	"cards": 5
+        }
+    parameters: []
+    headers:
+      - name: authorization
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDMzMTg5M2YxNjFkNDgxOGNjMDcyY2YiLCJ1c2VybmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkB0Y2dlbmdpbmUuY29tIiwicGVybWlzc2lvbl9sZXZlbCI6MTAsInZhbGlkYXRpb25fbGV2ZWwiOjAsInByb3ZpZGVyIjoidXNlcm5hbWUiLCJyZWZyZXNoX2tleSI6InE4SklHMy9vZ1M4c0huK3F2R2hqMnc9PSIsImlhdCI6MTY4MTA3NDUwMX0.Zp06uTfraH603KUw5tIucefR68xHNL_GQAI3GYlgXGI
+        description: ""
+        id: pair_e2542800a3ca49baa2b366c2c21f8dc8
+      - name: Content-Type
+        value: application/json
+        id: pair_641f62d0547f473aa02e9aecc43af9d9
+    authentication: {}
+    metaSortKey: -1620425724940.75
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_d7741b3e7d4744ea83a024f66e4ee0c1
+    parentId: fld_0b5710c4a1be492db496b7b19ba740d7
+    modified: 1681403474543
+    created: 1681069567961
+    url: http://127.0.0.1/packs/standard/
+    name: Delete Pack (admin)
+    description: ""
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: authorization
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDMzMTg5M2YxNjFkNDgxOGNjMDcyY2YiLCJ1c2VybmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkB0Y2dlbmdpbmUuY29tIiwicGVybWlzc2lvbl9sZXZlbCI6MTAsInZhbGlkYXRpb25fbGV2ZWwiOjAsInByb3ZpZGVyIjoidXNlcm5hbWUiLCJyZWZyZXNoX2tleSI6InE4SklHMy9vZ1M4c0huK3F2R2hqMnc9PSIsImlhdCI6MTY4MTA3NDUwMX0.Zp06uTfraH603KUw5tIucefR68xHNL_GQAI3GYlgXGI
+        description: ""
+        id: pair_e2542800a3ca49baa2b366c2c21f8dc8
+      - name: Content-Type
+        value: application/json
+        id: pair_641f62d0547f473aa02e9aecc43af9d9
+    authentication: {}
+    metaSortKey: -1620425724937.625
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_88e0f091fa6e40fb93e1af2d8d0149f8
+    parentId: fld_0b5710c4a1be492db496b7b19ba740d7
+    modified: 1681075453140
+    created: 1681069562549
+    url: http://127.0.0.1/packs/
+    name: Get Packs
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: authorization
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDMzMTg5M2YxNjFkNDgxOGNjMDcyY2YiLCJ1c2VybmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkB0Y2dlbmdpbmUuY29tIiwicGVybWlzc2lvbl9sZXZlbCI6MTAsInZhbGlkYXRpb25fbGV2ZWwiOjAsInByb3ZpZGVyIjoidXNlcm5hbWUiLCJyZWZyZXNoX2tleSI6InE4SklHMy9vZ1M4c0huK3F2R2hqMnc9PSIsImlhdCI6MTY4MTA3NDUwMX0.Zp06uTfraH603KUw5tIucefR68xHNL_GQAI3GYlgXGI
+        description: ""
+        id: pair_e2542800a3ca49baa2b366c2c21f8dc8
+      - name: Content-Type
+        value: application/json
+        id: pair_641f62d0547f473aa02e9aecc43af9d9
+    authentication: {}
+    metaSortKey: -1620425724934.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_587a05baf47b4f1398156dd384fa7d44
+    parentId: fld_0b5710c4a1be492db496b7b19ba740d7
+    modified: 1681075607915
+    created: 1681069287063
+    url: http://127.0.0.1/users/deck/test
+    name: UpdateDeck
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"cards": ["fish", "turtle"],
+        	"title": "Deck"
+        }
+    parameters: []
+    headers:
+      - name: authorization
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDMzMTg5M2YxNjFkNDgxOGNjMDcyY2YiLCJ1c2VybmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkB0Y2dlbmdpbmUuY29tIiwicGVybWlzc2lvbl9sZXZlbCI6MTAsInZhbGlkYXRpb25fbGV2ZWwiOjAsInByb3ZpZGVyIjoidXNlcm5hbWUiLCJyZWZyZXNoX2tleSI6InE4SklHMy9vZ1M4c0huK3F2R2hqMnc9PSIsImlhdCI6MTY4MTA3NDUwMX0.Zp06uTfraH603KUw5tIucefR68xHNL_GQAI3GYlgXGI
+        description: ""
+        id: pair_e2542800a3ca49baa2b366c2c21f8dc8
+      - name: Content-Type
+        value: application/json
+        id: pair_641f62d0547f473aa02e9aecc43af9d9
+    authentication: {}
+    metaSortKey: -1620425724872
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_b4107d7b6637480792fc2eadc108ed09
+    parentId: fld_0b5710c4a1be492db496b7b19ba740d7
+    modified: 1681075603786
+    created: 1681069287069
+    url: http://127.0.0.1/users/deck/test
+    name: DeleteDeck
+    description: ""
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: authorization
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDMzMTg5M2YxNjFkNDgxOGNjMDcyY2YiLCJ1c2VybmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkB0Y2dlbmdpbmUuY29tIiwicGVybWlzc2lvbl9sZXZlbCI6MTAsInZhbGlkYXRpb25fbGV2ZWwiOjAsInByb3ZpZGVyIjoidXNlcm5hbWUiLCJyZWZyZXNoX2tleSI6InE4SklHMy9vZ1M4c0huK3F2R2hqMnc9PSIsImlhdCI6MTY4MTA3NDUwMX0.Zp06uTfraH603KUw5tIucefR68xHNL_GQAI3GYlgXGI
+        description: ""
+        id: pair_e2542800a3ca49baa2b366c2c21f8dc8
+      - name: Content-Type
+        value: application/json
+        id: pair_641f62d0547f473aa02e9aecc43af9d9
+    authentication: {}
+    metaSortKey: -1620425687760
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_adbacb98dffa42b6855bae371849d2fe
+    parentId: fld_c4fddb097cc340fba78f7b435d185ae7
+    modified: 1681402938995
+    created: 1681069299558
+    url: http://127.0.0.1/matches/add/
+    name: Add Match (server)
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"tid": "test12345",
+        	"mode": "standard",
+        	"players": ["Player", "Marc"]
+        }
+    parameters: []
+    headers:
+      - name: authorization
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDMzMTg5M2YxNjFkNDgxOGNjMDcyY2YiLCJ1c2VybmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkB0Y2dlbmdpbmUuY29tIiwicGVybWlzc2lvbl9sZXZlbCI6MTAsInZhbGlkYXRpb25fbGV2ZWwiOjAsInByb3ZpZGVyIjoidXNlcm5hbWUiLCJyZWZyZXNoX2tleSI6InE4SklHMy9vZ1M4c0huK3F2R2hqMnc9PSIsImlhdCI6MTY4MTA3NDUwMX0.Zp06uTfraH603KUw5tIucefR68xHNL_GQAI3GYlgXGI
+        description: ""
+        id: pair_b102149ab65248d899b47a7ba22c79b0
+      - name: Content-Type
+        value: application/json
+        id: pair_e570798ad1ad484c8b94b1637750e281
+    authentication: {}
+    metaSortKey: -1622748963473
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_c4fddb097cc340fba78f7b435d185ae7
+    parentId: wrk_1e327cdd1a8c42eeba656adbd9ec0c93
+    modified: 1683330916061
+    created: 1681069299556
+    name: Matches
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: 400
+    _type: request_group
+  - _id: req_769bcd827771430ab1a02287e50a83f7
+    parentId: fld_c4fddb097cc340fba78f7b435d185ae7
+    modified: 1681402942797
+    created: 1681069299561
+    url: http://127.0.0.1/matches/complete/
+    name: Complete Match (server)
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"tid": "test12345",
+        	"winner": "Marc"
+        }
+    parameters: []
+    headers:
+      - name: authorization
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDMzMTg5M2YxNjFkNDgxOGNjMDcyY2YiLCJ1c2VybmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkB0Y2dlbmdpbmUuY29tIiwicGVybWlzc2lvbl9sZXZlbCI6MTAsInZhbGlkYXRpb25fbGV2ZWwiOjAsInByb3ZpZGVyIjoidXNlcm5hbWUiLCJyZWZyZXNoX2tleSI6InE4SklHMy9vZ1M4c0huK3F2R2hqMnc9PSIsImlhdCI6MTY4MTA3NDUwMX0.Zp06uTfraH603KUw5tIucefR68xHNL_GQAI3GYlgXGI
+        description: ""
+        id: pair_b102149ab65248d899b47a7ba22c79b0
+      - name: Content-Type
+        value: application/json
+        id: pair_e570798ad1ad484c8b94b1637750e281
+    authentication: {}
+    metaSortKey: -1622628550447
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_6ed4f29a0e414298a8b886ef6ca445fe
+    parentId: fld_c4fddb097cc340fba78f7b435d185ae7
+    modified: 1681074924904
+    created: 1681069299569
+    url: http://127.0.0.1/matches/
+    name: Get Matches
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: authorization
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDMzMTg5M2YxNjFkNDgxOGNjMDcyY2YiLCJ1c2VybmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkB0Y2dlbmdpbmUuY29tIiwicGVybWlzc2lvbl9sZXZlbCI6MTAsInZhbGlkYXRpb25fbGV2ZWwiOjAsInByb3ZpZGVyIjoidXNlcm5hbWUiLCJyZWZyZXNoX2tleSI6InE4SklHMy9vZ1M4c0huK3F2R2hqMnc9PSIsImlhdCI6MTY4MTA3NDUwMX0.Zp06uTfraH603KUw5tIucefR68xHNL_GQAI3GYlgXGI
+        description: ""
+        id: pair_d24ac62787754b8aac7d1822a0bb9c77
+      - name: Content-Type
+        value: application/json
+        id: pair_e70c66a6553e41cb916d41d351a17642
+    authentication: {}
+    metaSortKey: -1622568343909
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_58c1cfdf0993405dbf6c91e684b4f090
+    parentId: fld_bdfcedc7634249738cfc59167d4164f3
+    modified: 1681403479855
+    created: 1681069310325
+    url: http://127.0.0.1/rewards/add/
+    name: Add Reward (admin)
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"tid": "first_reward",
+        	"xp": 200,
+        	"coins": 1000,
+        	"cards": ["bird"],
+        	"packs": ["standard"]
+        }
+    parameters: []
+    headers:
+      - name: authorization
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDMzMTg5M2YxNjFkNDgxOGNjMDcyY2YiLCJ1c2VybmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkB0Y2dlbmdpbmUuY29tIiwicGVybWlzc2lvbl9sZXZlbCI6MTAsInZhbGlkYXRpb25fbGV2ZWwiOjAsInByb3ZpZGVyIjoidXNlcm5hbWUiLCJyZWZyZXNoX2tleSI6InE4SklHMy9vZ1M4c0huK3F2R2hqMnc9PSIsImlhdCI6MTY4MTA3NDUwMX0.Zp06uTfraH603KUw5tIucefR68xHNL_GQAI3GYlgXGI
+        description: ""
+        id: pair_79c16ed4598e4620baee7afb831d5a67
+      - name: Content-Type
+        value: application/json
+        id: pair_5228a9e8a6844358b404710d858cb39e
+    authentication: {}
+    metaSortKey: -1623448570794
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_bdfcedc7634249738cfc59167d4164f3
+    parentId: wrk_1e327cdd1a8c42eeba656adbd9ec0c93
+    modified: 1683330916061
+    created: 1681069310323
+    name: Rewards
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: 500
+    _type: request_group
+  - _id: req_5762e82517a14124bb64994a7cacefba
+    parentId: fld_bdfcedc7634249738cfc59167d4164f3
+    modified: 1681403483012
+    created: 1681078362305
+    url: http://127.0.0.1/rewards/first_reward
+    name: Delete Reward (admin)
+    description: ""
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: authorization
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDMzMTg5M2YxNjFkNDgxOGNjMDcyY2YiLCJ1c2VybmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkB0Y2dlbmdpbmUuY29tIiwicGVybWlzc2lvbl9sZXZlbCI6MTAsInZhbGlkYXRpb25fbGV2ZWwiOjAsInByb3ZpZGVyIjoidXNlcm5hbWUiLCJyZWZyZXNoX2tleSI6InE4SklHMy9vZ1M4c0huK3F2R2hqMnc9PSIsImlhdCI6MTY4MTA3NDUwMX0.Zp06uTfraH603KUw5tIucefR68xHNL_GQAI3GYlgXGI
+        description: ""
+        id: pair_79c16ed4598e4620baee7afb831d5a67
+      - name: Content-Type
+        value: application/json
+        id: pair_5228a9e8a6844358b404710d858cb39e
+    authentication: {}
+    metaSortKey: -1623448570781.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_1442e6cea8f341f2bc2831eb4e1cb922
+    parentId: fld_bdfcedc7634249738cfc59167d4164f3
+    modified: 1681078280269
+    created: 1681069310330
+    url: http://127.0.0.1/users/rewards/gain/643328291f0b085c5dbba784
+    name: Gain Reward
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"reward": "first_reward"
+        }
+    parameters: []
+    headers:
+      - name: authorization
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDMzMTg5M2YxNjFkNDgxOGNjMDcyY2YiLCJ1c2VybmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkB0Y2dlbmdpbmUuY29tIiwicGVybWlzc2lvbl9sZXZlbCI6MTAsInZhbGlkYXRpb25fbGV2ZWwiOjAsInByb3ZpZGVyIjoidXNlcm5hbWUiLCJyZWZyZXNoX2tleSI6InE4SklHMy9vZ1M4c0huK3F2R2hqMnc9PSIsImlhdCI6MTY4MTA3NDUwMX0.Zp06uTfraH603KUw5tIucefR68xHNL_GQAI3GYlgXGI
+        description: ""
+        id: pair_79c16ed4598e4620baee7afb831d5a67
+      - name: Content-Type
+        value: application/json
+        id: pair_5228a9e8a6844358b404710d858cb39e
+      - id: pair_698ae334782648368cdc11ccbf3e9e20
+        name: ""
+        value: ""
+        description: ""
+    authentication: {}
+    metaSortKey: -1623448570744
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_b070c394097f4d15bfcb3ee46d77e8e0
+    parentId: fld_bdfcedc7634249738cfc59167d4164f3
+    modified: 1681403504236
+    created: 1681069310333
+    url: http://127.0.0.1/rewards/
+    name: Get Rewards (server)
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: authorization
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDMzMTg5M2YxNjFkNDgxOGNjMDcyY2YiLCJ1c2VybmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkB0Y2dlbmdpbmUuY29tIiwicGVybWlzc2lvbl9sZXZlbCI6MTAsInZhbGlkYXRpb25fbGV2ZWwiOjAsInByb3ZpZGVyIjoidXNlcm5hbWUiLCJyZWZyZXNoX2tleSI6InE4SklHMy9vZ1M4c0huK3F2R2hqMnc9PSIsImlhdCI6MTY4MTA3NDUwMX0.Zp06uTfraH603KUw5tIucefR68xHNL_GQAI3GYlgXGI
+        description: ""
+        id: pair_79c16ed4598e4620baee7afb831d5a67
+      - name: Content-Type
+        value: application/json
+        id: pair_5228a9e8a6844358b404710d858cb39e
+    authentication: {}
+    metaSortKey: -1623448570694
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_748efa1c01424da781f89dba3b665256
+    parentId: fld_26b7981264cb4db18ee79a8838652d14
+    modified: 1683331389888
+    created: 1683330906876
+    url: http://127.0.0.1/market/cards/add/
+    name: MarketAdd
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"card": "armored_beast",
+        	"quantity": 2,
+        	"price": 200
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_f4540582e5ce44ef9d1032438dc21579
+      - name: authorization
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDM1ZTQ2NTBjOWE4MTA5M2M5YjE1YzEiLCJ1c2VybmFtZSI6IlBsYXllciIsImVtYWlsIjoicGxheWVyQHRjZ2VuZ2luZS5jb20iLCJwZXJtaXNzaW9uX2xldmVsIjoxLCJ2YWxpZGF0aW9uX2xldmVsIjowLCJwcm92aWRlciI6InVzZXJuYW1lIiwicmVmcmVzaF9rZXkiOiJhQmJiQ2NLbjFHTlZTYit6Zlg2S0J3PT0iLCJpYXQiOjE2ODMzMzA5ODh9.JeTGNIAfYL1boZygDUzacVCg96xX6ZREs7VqF9mKSYA
+        description: ""
+        id: pair_2df4fa1aad7e4ac99a7d61ab76b5472e
+    authentication: {}
+    metaSortKey: -1000000050
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_26b7981264cb4db18ee79a8838652d14
+    parentId: wrk_1e327cdd1a8c42eeba656adbd9ec0c93
+    modified: 1683330916061
+    created: 1683330906866
+    name: Market
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: 600
+    _type: request_group
+  - _id: req_f0abb1abb3bd489e9f57d9355e06793c
+    parentId: fld_26b7981264cb4db18ee79a8838652d14
+    modified: 1683331387213
+    created: 1683330906882
+    url: http://127.0.0.1/market/cards/remove/
+    name: MarketRemove
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"card": "armored_beast"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_f4540582e5ce44ef9d1032438dc21579
+      - name: authorization
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDM1ZTQ2NTBjOWE4MTA5M2M5YjE1YzEiLCJ1c2VybmFtZSI6IlBsYXllciIsImVtYWlsIjoicGxheWVyQHRjZ2VuZ2luZS5jb20iLCJwZXJtaXNzaW9uX2xldmVsIjoxLCJ2YWxpZGF0aW9uX2xldmVsIjowLCJwcm92aWRlciI6InVzZXJuYW1lIiwicmVmcmVzaF9rZXkiOiJhQmJiQ2NLbjFHTlZTYit6Zlg2S0J3PT0iLCJpYXQiOjE2ODMzMzA5ODh9.JeTGNIAfYL1boZygDUzacVCg96xX6ZREs7VqF9mKSYA
+        description: ""
+        id: pair_2df4fa1aad7e4ac99a7d61ab76b5472e
+    authentication: {}
+    metaSortKey: -1000000000
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_b86ec9a529c34cddaa0ee8f318e0368c
+    parentId: fld_26b7981264cb4db18ee79a8838652d14
+    modified: 1683331384699
+    created: 1683330906879
+    url: http://127.0.0.1/market/cards/trade/
+    name: MarketTrade
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"seller": "Player",
+        	"card": "armored_beast",
+        	"quantity": 1
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_f4540582e5ce44ef9d1032438dc21579
+      - name: authorization
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDM1ZTQ2ZDBjOWE4MTA5M2M5YjE1YzciLCJ1c2VybmFtZSI6Ik1hcmMiLCJlbWFpbCI6Im1hcmNAdGNnZW5naW5lLmNvbSIsInBlcm1pc3Npb25fbGV2ZWwiOjEsInZhbGlkYXRpb25fbGV2ZWwiOjAsInByb3ZpZGVyIjoidXNlcm5hbWUiLCJyZWZyZXNoX2tleSI6IkhDU2RKN1p4SG1RUGY2NlM0NFl6Nmc9PSIsImlhdCI6MTY4MzMzMTMyN30.44lcyInppzsyEUFP6SSR0VCdcXnDpDyUQeWYqJEJ9KM
+        description: ""
+        id: pair_2df4fa1aad7e4ac99a7d61ab76b5472e
+    authentication: {}
+    metaSortKey: -999999975
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_6a1762eda936497791a18f79f8de8134
+    parentId: fld_26b7981264cb4db18ee79a8838652d14
+    modified: 1683331381898
+    created: 1683330906870
+    url: http://127.0.0.1/market/cards/user/Player
+    name: Market Get
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: authorization
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDM1ZTQ2NTBjOWE4MTA5M2M5YjE1YzEiLCJ1c2VybmFtZSI6IlBsYXllciIsImVtYWlsIjoicGxheWVyQHRjZ2VuZ2luZS5jb20iLCJwZXJtaXNzaW9uX2xldmVsIjoxLCJ2YWxpZGF0aW9uX2xldmVsIjowLCJwcm92aWRlciI6InVzZXJuYW1lIiwicmVmcmVzaF9rZXkiOiJhQmJiQ2NLbjFHTlZTYit6Zlg2S0J3PT0iLCJpYXQiOjE2ODMzMzA5ODh9.JeTGNIAfYL1boZygDUzacVCg96xX6ZREs7VqF9mKSYA
+        description: ""
+        id: pair_dd9b89a7d37d4a63a4489e0b7ee5fed0
+      - name: ""
+        value: ""
+        description: ""
+        id: pair_b6059ebadbe143ffbad95a1280cdd22b
+    authentication: {}
+    metaSortKey: -999999950
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_ecc870c9dbb9464e99e884cc40161ea4
+    parentId: fld_26b7981264cb4db18ee79a8838652d14
+    modified: 1683331376656
+    created: 1683330906888
+    url: http://127.0.0.1/market/cards
+    name: Market Get All
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: authorization
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDM1ZTQ2NTBjOWE4MTA5M2M5YjE1YzEiLCJ1c2VybmFtZSI6IlBsYXllciIsImVtYWlsIjoicGxheWVyQHRjZ2VuZ2luZS5jb20iLCJwZXJtaXNzaW9uX2xldmVsIjoxLCJ2YWxpZGF0aW9uX2xldmVsIjowLCJwcm92aWRlciI6InVzZXJuYW1lIiwicmVmcmVzaF9rZXkiOiJhQmJiQ2NLbjFHTlZTYit6Zlg2S0J3PT0iLCJpYXQiOjE2ODMzMzA5ODh9.JeTGNIAfYL1boZygDUzacVCg96xX6ZREs7VqF9mKSYA
+        description: ""
+        id: pair_dd9b89a7d37d4a63a4489e0b7ee5fed0
+      - name: ""
+        value: ""
+        description: ""
+        id: pair_b6059ebadbe143ffbad95a1280cdd22b
+    authentication: {}
+    metaSortKey: -999999900
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_bf8b127398a243f6ba82600c88cd52b7
+    parentId: fld_073756d2ee5844248d51a991d06f912d
+    modified: 1681079057389
+    created: 1681069243214
+    url: http://127.0.0.1/activity
+    name: Get Activity
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: authorization
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDMzMTg5M2YxNjFkNDgxOGNjMDcyY2YiLCJ1c2VybmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkB0Y2dlbmdpbmUuY29tIiwicGVybWlzc2lvbl9sZXZlbCI6MTAsInZhbGlkYXRpb25fbGV2ZWwiOjAsInByb3ZpZGVyIjoidXNlcm5hbWUiLCJyZWZyZXNoX2tleSI6InE4SklHMy9vZ1M4c0huK3F2R2hqMnc9PSIsImlhdCI6MTY4MTA3NDUwMX0.Zp06uTfraH603KUw5tIucefR68xHNL_GQAI3GYlgXGI
+        description: ""
+        id: pair_54d8e6a9495546a1bbc5498e8bbf7cca
+    authentication: {}
+    metaSortKey: -1622508137421
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_073756d2ee5844248d51a991d06f912d
+    parentId: wrk_1e327cdd1a8c42eeba656adbd9ec0c93
+    modified: 1683330916061
+    created: 1681069243211
+    name: Activity
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: 700
+    _type: request_group
+  - _id: env_6d2c8f0d36dc416f260e135a603a446983287084
+    parentId: wrk_1e327cdd1a8c42eeba656adbd9ec0c93
+    modified: 1683261747006
+    created: 1683261747006
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1683261747006
+    _type: environment
+  - _id: jar_6d2c8f0d36dc416f260e135a603a446983287084
+    parentId: wrk_1e327cdd1a8c42eeba656adbd9ec0c93
+    modified: 1683261747008
+    created: 1683261747008
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_85c1cba3990646d1bf8f099f8b3f0b13
+    parentId: wrk_1e327cdd1a8c42eeba656adbd9ec0c93
+    modified: 1683261747003
+    created: 1683261747003
+    fileName: Tcg Engine
+    contents: ""
+    contentType: yaml
+    _type: api_spec
